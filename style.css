@@ -1,0 +1,73 @@
+body {
+    background: rgb(3, 52, 3);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    margin-top: 0;
+    justify-content: center;    
+    font-size: 50px;
+}
+
+.mainlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subheader { 
+    display: flex;
+    font-size: 24px; 
+    font-family: serif; 
+    color:aliceblue; 
+    text-align: center; 
+    justify-content: center;
+    animation: blink  0.5s linear infinite;
+ 
+  }  
+   
+  @keyframes blink{ 
+    25%{ 
+      opacity: 0.5; 
+    } 
+    50%{ 
+      opacity: 0; 
+    } 
+    75%{ 
+      opacity: 0.5; 
+    } 
+  } 
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  a {
+    color: black;
+    background-color: chartreuse;
+    animation: blink  1.5s linear infinite;
+  }
+
+  li {
+    margin-bottom: 4px;
+    padding: 16px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkgray;
+    color: rgb(3, 52, 3);
+    font-weight: 900;
+    font-size: 20px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
